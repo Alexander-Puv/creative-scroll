@@ -8,6 +8,7 @@
   --index: calc(1vw + 1vh);
   --color-header: #f4efec;
   --color-text: #cdc6c3;
+  --gallery-gap: calc(var(--index) * 10);
 }
 
 @font-face {
@@ -20,6 +21,10 @@
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: outfit-c;
+}
+
+.wrapper, .content {
+  will-change: tranform;
 }
 
 body {
@@ -43,6 +48,7 @@ body {
 }
 
 .main-header {
+  position: relative;
   height: 100vh;
 }
 
@@ -56,12 +62,44 @@ body {
 
 .gallery {
   display: flex;
-
+  padding: calc(var(--index) * 8) 0;
 }
 
 .gallery > * {
   flex: 1;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  gap: var(--gallery-gap);
+}
+
+.gallery__left {
+  align-items: flex-start;
+  margin-top: calc(var(--gallery-gap) * 1.25);
+}
+
+.gallery__right {
+  align-items: flex-end;
+  margin-top: var(--gallery-gap);
+}
+
+.gallery__item {
+  max-width: calc(var(--index) * 21);
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+.text-block {
+  position: relative;
+  color: var(--color-text);
+}
+
+.text-block__h {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-header);
+}
+
+.text-block__p {
+  line-height: 1.75;
 }

@@ -12,26 +12,41 @@
   <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header class="hero-section">
-    <img class="hero" src="img/hero.png">
-
-    <div class="container">
-      <div class="main-header">
-        <h1 class="main-title">creative scroll</h1>
-      </div>
-    </div>
-  </header>
-
-  <div class="portfolio">
-    <div class="container">
-      <div class="gallery">
-        <div class="gallery__left">
-          <img class="gallery__item" src="img/work/1.jpg">
-          <img class="gallery__item" src="img/work/2.jpg">
+  <div class="wrapper">
+    <div class="content">
+      <header class="hero-section">
+        <img data-speed=".6" class="hero" src="img/hero.png">
+    
+        <div class="container">
+          <div data-speed=".75" class="main-header">
+            <h1 class="main-title">creative scroll</h1>
+          </div>
         </div>
-
-        <div class="gallery__right">
-          <div class="text-block gallery__item"></div>
+      </header>
+    
+      <div class="portfolio">
+        <div class="container">
+          <div class="gallery">
+            <div data-speed=".9" class="gallery__left">
+              <img class="gallery__item" src="img/work/1.jpg">
+              <img class="gallery__item" src="img/work/2.jpg">
+              <div class="text-block gallery__item">
+                <h2 class="text-block__h">Creating floating scroll with amazing parallax effect</h2>
+                <p class="text-block__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptate provident quia adipisci.</p>
+              </div>
+              <img class="gallery__item" src="img/work/6.jpg">
+            </div>
+    
+            <div data-speed="1.1" class="gallery__right">
+              <div class="text-block gallery__item">
+                <h2 class="text-block__h">Creating floating scroll with amazing parallax effect</h2>
+                <p class="text-block__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptate provident quia adipisci.</p>
+              </div>
+              <img class="gallery__item" src="img/work/3.jpg">
+              <img class="gallery__item" src="img/work/4.jpg">
+              <img class="gallery__item" src="img/work/5.jpg">
+            </div>
+          </div>
         </div>
       </div>
     </div>
