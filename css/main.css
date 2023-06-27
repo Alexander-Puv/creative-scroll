@@ -11,6 +11,17 @@
   --gallery-gap: calc(var(--index) * 10);
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background-image: inherit;
+  background-size: inherit;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-header);
+  border: 3px solid #1e1e20;
+  border-radius: 6px;
+}
+
 @font-face {
   font-family: raleway-c;
   src: url(../fonts/raleway-regular.woff2);
